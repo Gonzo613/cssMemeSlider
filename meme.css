@@ -1,0 +1,106 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    margin-top: 200px;
+}
+
+    .container{
+        padding: 30px 10px 10px 10px;
+        background: rgb(172,73,116);
+        background: linear-gradient(90deg, rgba(172,73,116,1) 0%, rgba(7,32,61,1) 100%);    
+        border-radius: 10px;
+        -webkit-box-shadow: 4px 4px 20px 20px  rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 4px 4px 20px  0px rgba(34, 60, 80, 0.2);
+        box-shadow: 20px  20px  20px 0px rgba(34, 60, 80, 0.2);
+       
+    }
+
+    .meme__container{
+        display: flex;
+        overflow: hidden;
+        flex-direction: row;
+        max-width: 50em;
+        position: relative;
+        
+    }
+
+
+    .meme_slider{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .meme{
+        display: flex;
+        flex-direction: row;
+        max-width: 45em; 
+        transition: all 1s ease-in-out;
+    }
+  
+    .imgs{
+        width: 1000px;
+        height: 500px;
+        
+    } 
+
+    .text {
+        margin: 0;
+        opacity: 0;
+        
+    }
+    
+    
+    .text.active {
+        opacity: 1;
+        
+    }
+    
+    .text_meme-slide {  
+        display: none;
+    }
+    
+    .text_meme-slide.active {
+        display: block;
+        
+    }
+    
+
+h1{
+    font-family: "Roboto",sans-serif;
+    font-size: 20px;
+    color: white
+}
+
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+        gap: 15px;
+
+    }
+    .slider_button{
+        border-radius: 10px;
+        background-color: white;
+        width: 15px;
+        transition: 0.5s;
+        height: 15px;
+        cursor:pointer;
+    }
+
+    .slider_button:hover{
+        background-color: rgb(225, 171, 213);
+        opacity: 5px;
+    }
+    
+    .active1{
+        background-color: rgb(225, 171, 213);
+    }

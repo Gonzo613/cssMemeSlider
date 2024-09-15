@@ -4,17 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="meme.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Meme slider</title>
 </head>
 <body>
-    <main>
-        <div class="container">
-            <div class="meme__container">
-                
+    <div class="container">
+        <div class="meme__container">
+            <div class="meme">
+                <img class="imgs" src="img/1.jpg" alt="1">
+                <img class="imgs" src="img/2.jpg" alt="2">
+                <img class="imgs" src="img/3.jpg" alt="3">
+                <img class="imgs" src="img/4.jpg" alt="4">
             </div>
-        </div>
-    </main>
+        </div> 
+
+            <div class="meme_slider">
+                <div class="text_meme-slide active">
+                    <h1 class="text active" >Так и живем...</h1>
+                </div>
+                <div class="text_meme-slide">
+                  <h1 class="text" >Смешной котик</h1>
+                </div>
+                <div class="text_meme-slide">
+                  <h1 class="text" >😈</h1>
+                </div>
+                <div class="text_meme-slide">
+                  <h1 class="text" >Мечта любого.</h1>
+                </div>
+                
+                <div class="buttons">
+                  <div class="slider_button active1"></div>
+                <div class="buttons">
+                    <div class="slider_button"></div>
+                  </div>
+                  <div class="buttons">
+                    <div class="slider_button"></div>
+                  </div>
+                  <div class="buttons">
+                    <div class="slider_button"></div>
+                  </div>
+                </div>
+            </div>
+    </div>
     <script src="meme_slider.js"></script>
 </body>
 </html>
